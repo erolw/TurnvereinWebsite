@@ -1,0 +1,51 @@
+body {
+  background-color: wh;
+    font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.topnav {
+  margin: 0px 0px 0px 0px;
+  border: 0px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnavlinks {
+  float: right;
+  color: #FFFF;
+  text-decoration: none;
+  border-radius: 15px 15px 15px 15px;
+  padding: 14px 16px;
+  font-size: 18px;
+}
+
+.name {
+  font-size: 16px;
+  color: white;
+  border-radius: 0px;
+}
+
+.topnavlinks:hover {
+  border-radius: 0px 0px 0px 0px;
+  transition: 0.5s;
+  background-color: lightgreen
+}
+#startseite {
+  background-color: red;
+}
+
+.Logo {
+  float: left;
+  height: 50px;
+  width: 50px;
+  -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.tanzworkshopflyer {
+  align-items: stretch;
+  float: right;
+  height: 800px;
+  width: 400px;
+}

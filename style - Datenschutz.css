@@ -39,24 +39,10 @@ width: 50px;
 padding-bottom: 50px,
 }
 
-.Tanz-WorkshopinWeitersburg {
-color: black;
-padding-left: 10px;
-font-family: arial;
-font-size: 14px;
-}
-
-.Neuigkeiten {
-padding-bottom: 50px;
-padding-top: 50px;
-font-size: 14px;
-text-decoration: none;
-text-align: center;
-}
-
-.JahreWeitersburg {
-color: black;
-padding-left: 10px;
-font-family: arial;
-font-size: 14px;
+.datenschutz {
+    width: 75%;
+    padding-top: 50px;
+    text-align: center;
+    right: 100px;
+    padding-left: 200px;
 }

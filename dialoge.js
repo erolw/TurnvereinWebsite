@@ -1,14 +1,16 @@
-function dialogSchliessen(dialogid) {
-    console.log("Test");
-    document.getElementById(dialogid).classList.remove("sichtbar")
-    console.log("Mal schauen")
-    document.getElementById("body-overlay").classList.remove("sichtbar");
-    console.log("Wird es gdfgd");
+const cookieBox = document.querySelector(".wrapper"),
+acceptBtn = cookieBox.querySelector(".buttons button");
+
+acceptBtn.onclick = ()=>{
+    console.log("Cookies wurden akzeptiert")
+    document.cookie = "Cookies = Tv.Weitersburg; dauer der Cookies"+60*60*24*30;
+    if(document.cookie){
+        cookieBox.classList.add("hide");
+
+    }else{
+        alert("Cookies koenen nich gesetzt werden");
+    }
 }
 
-function dialogOeffnen(dialogid) {
-    console.log("Wird es ueberhaupt ausgefuert");
-    document.getElementById(dialogid).classList.add("sichtbar");
-    document.getElementById("body-overlay").classList.add("sichtbar");
-    console.log("Ja es wird ausgefuehrt");
-}
+let checkCookie = document.cookie.indexOf("Cookies = Tv.Weitersburg")
+checkCookie != -1 ? cookieBox.classList.add("hide"): cookieBox.classList.remove("hide");

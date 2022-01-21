@@ -1,8 +1,9 @@
 body {
-font-family: arial;
-background-color: white;
-margin: 0
-}
+    font-family: arial;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px; 
+    }
 
 .topnav {
 background-color: white;

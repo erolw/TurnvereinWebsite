@@ -4,38 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/938C55F1-A913-41C9-A480-1EA9CB5B257B.svg" type="image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+	<link rel="icon" href="images/938C55F1-A913-41C9-A480-1EA9CB5B257B.svg" type="image">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="dialog.css">
     <title>Tv-Weitersburg</title>
 </head>
 
 <body>
     <div class="topnav">
-      <a class="topnavlinks"href="impressum.html">Impressum</a>
-      <a class="topnavlinks"href="datenschutz.html">Datenschutz</a>
+        <a class="topnavlinks"href="impressum.html">Impressum</a>
         <a class="topnavlinks"href="kontakt.html">Kontakt</a>
         <a class="topnavlinks"href="uberuns.html">Über Uns</a>
         <a class="topnavlinks"href="angebote.html">Angebote</a>
         <a class="topnavlinks" id="startseite"href="index.html">Startseite</a>
-        <a href="index.html"><img src="/images/938C55F1-A913-41C9-A480-1EA9CB5B257B.svg" alt="Tv-Weitersburg Logo" class="Logo"></a>
-        <p class="name">Tv&nbspWeitersburg&nbsp1891&nbspe.V.</p>
+        <a href="index.html"><img src="Tv Weitersburg logo.png" alt="Tv-Weitersburg Logo" class="Logo"></a>
+        <p class="name"><strong>TV 1891 Weitersburg e.V.</strong></p>
     </div>
-
-    <h1 style="text-align: center;"><u>Neuigkeiten vom Turnverein</u></h1>
+	<div class="Neuigkeiten">
+    <h1><strong>Neuigkeiten vom Turnverein</strong></h1>
+	</div>
     <br>
-    <div class="Tanz-WorkshopinWeitersburg">
-      <h2><u><b>Tanz-Workshop in Weitersburg</u></h2>
-      <p>Am 9. Oktober 2021 findet in Weitersburg ein zweistündiger, kostenloser Tanz-Workshop statt.
-      <br>Vorgestellt werden die Tanzstile Jazz, Modern, Streetdance, Ballett und Contemporary.
-      <br>Alle Kinder und Jugendliche ab acht Jahren (und ihre Eltern) sind herzlich eingeladen! ... siehe Flyer.</p>
-      
-    </div>
-    <br><hr>
-    <div class="130JahreWeitersburg">
-        <h2><u><b>130 Jahre TV-Weitersburg</u></h2>
+    <div class="JahreWeitersburg">
+        <h2>130 Jahre TV-Weitersburg</h2>
         <p>Liebe Weitersburger,<br><br>
 
             Der Turnverein wird dieses Jahr 130 Jahre alt.<br>
@@ -46,5 +36,12 @@
             <a href="/files/Plakat-Trimm-Dich.pdf">Trimm dich Fit Plakat</a>&nbsp;
             <a href="/files/Trimm-Dich-Fit-Teilnahmebedingungen.pdf">Trimm-Dich-Fit-Teilnahmebedingungen</a> 
     </div>
-    <hr>
-</html>
+	<div id="body-overlay"></div>
+	<div class="dialog" id="dialog-schliessen-button">
+		<h4>Datenschutz ist uns sehr wichtig!</h4>
+		<p>Wir nutzen <a href="datenschutz.html">Cookies</a> auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern.</p>
+		<a href="#" role="button" class="dialog-schliessen-button" id="dialog" onclick="dialogSchliessen('loslegen-dialog')">Akzeptiren</a>
+		<a href="#" role="button" class="Ablehnen" onclick="dialogSchliessen('loslegen-dialog')">Ablehnen</a>
+	</div>
+	<script src="dialoge.js"></script>
+</body></html>

@@ -1,6 +1,7 @@
 body {
 font-family: arial;
 background-color: white;
+margin: 0
 }
 
 .topnav {
@@ -30,9 +31,6 @@ padding-left: 65px;
 padding-bottom: 50px,
 }
 
-#startseite {
-background-color: lightgrey;
-}
 .Logo {
 float: left;
 height: 50px;
@@ -48,14 +46,14 @@ font-size: 14px;
 }
 
 .Neuigkeiten {
-height: 140px;
-font-size: 32px;
+padding-bottom: 50px;
+padding-top: 50px;
+font-size: 14px;
 text-decoration: none;
 text-align: center;
-vertical-align: middle;
 }
 
-.130JahreWeitersburg {
+.JahreWeitersburg {
 color: black;
 padding-left: 10px;
 font-family: arial;

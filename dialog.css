@@ -1,0 +1,71 @@
+#body-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.6);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 300ms ease-in-out;
+}
+
+.dialog {
+	position: fixed;
+	left: 50%;
+	right: 50%;
+	background-color: white;
+	color: black;
+	transform: translate(-50%,-50%);
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 8px 8px 16px rgba(0,0,0,1);
+	width: 25%;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#body-overlay.sichtbar, .dialog.sichtbar {
+    opacity: 0;
+    pointer-events: none;
+	transition: opacity 300ms ease-in-out;
+}
+
+.dialog-schliessen-button {
+	display: inline-block;
+	background-color: green;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	padding: 7px;
+	width: 150px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	text-decoration: none;
+	margin-right: 10px;
+	margin-left: 15px;
+}
+
+.Ablehnen {
+display: inline-block;
+margin-right: 10px;
+background-color: lightgrey;
+border-radius: 10px;
+color: black;
+text-align: center;
+font-size: 20px;
+padding: 7px;
+width: 150px;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+text-decoration: none;	
+}
